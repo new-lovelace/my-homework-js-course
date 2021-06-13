@@ -13,7 +13,7 @@ class Computer {
     this.name = name;
   }
   turnOn() {
-  console.log('${this.name} is turned on!');
+  console.log(`${this.name} is turned on!`);
     }
   }
 
@@ -50,9 +50,9 @@ class Ultrabook extends Laptop {
   }
   turnOn(){
     if ((this.weight > 2) && (this.battery < 4)) {
-      console.log('Oops! Something is wrong with ${name}');
+      console.log(`Oops! Something is wrong with ${name}`);
     }
-    else console.log('${this.name} is turned on!');
+    else console.log(`${this.name} is turned on!`);
   }
 }
 
@@ -79,7 +79,7 @@ class BasicComputer extends Computer {
     this.FPS = cpu / memory;
   }
   playGame(){
-    console.log('You are playing ${this.gameName} with ${this.FPS} FPS.');
+    console.log(`You are playing ${this.gameName} with ${this.FPS} FPS.`);
   }
 
   cpuUpgrade(newCpu){
@@ -124,7 +124,7 @@ class GameComputer extends BasicComputer{
       console.log('This computer is inappropriate for playing games, man!');
     }
     else {
-      console.log('You are playing ${this.gameName} with ${this.FPS} FPS.');
+      console.log(`You are playing ${this.gameName} with ${this.FPS} FPS.`);
       this.cpu = 0.999 * this.cpu;
     }
   }
@@ -152,7 +152,7 @@ const car = {
   engineDisplacement: 2,
   drivers: [],
   drive(){
-    console.log("We are driving at ${maxSpeed} km/hour");
+    console.log(`We are driving at ${maxSpeed} km/hour`);
   },
   info(){
     console.log(car);
